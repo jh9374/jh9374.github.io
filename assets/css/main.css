@@ -72,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+.form__button { 
+	margin-top: 1.25em;
+}
+
 /* Basic */
 
 	html {

@@ -67,19 +67,28 @@
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>UNDER CONSTRUCTION</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="POST" action="mailto:juanhernandez9374@gmail.com" enctype="multipart/form-data" name="ContactForm">
+								<form method="POST" action="https://formspree.io/f/xayanvlj" name="ContactForm">
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall">
+											<input  type="text" name="name" id="name" placeholder="Name" required />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input  type="email" name="_replyto" id="email" placeholder="Email" required />
+										</div>
+										<div class="col-12">
+											<textarea  name="message" id="message" placeholder="Message" rows="4" required></textarea>
+										</div>
+										<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 									</div>
+									<div class="form__button">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+										</ul>
+									</div>
+									
 								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
